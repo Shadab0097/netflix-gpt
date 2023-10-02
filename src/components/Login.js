@@ -36,16 +36,17 @@ const Login = () => {
                     const user = userCredential.user;
 
                     updateProfile(user, {
-                        displayName: name.current.value , photoURL: "https://lh3.googleusercontent.com/a/ACg8ocKuWnnyXYlbKlT8ySgQ2N_oEtvm_ldvwhhoW53G178Ur0o=s432-c-no"
+                        displayName: name.current.value , photoURL: "https://occ-0-6110-3647.1.nflxso.net/dnm/api/v6/K6hjPJd6cR6FpVELC5Pd6ovHRSk/AAAABY20DrC9-11ewwAs6nfEgb1vrORxRPP9IGmlW1WtKuaLIz8VxCx5NryzDK3_ez064IsBGdXjVUT59G5IRuFdqZlCJCneepU.png?r=229"
                       }).then(() => {
                         // Profile updated!
                         const {uid , email , displayName ,photoURL} = auth.currentUser;
                         dispatch(addUser({uid:uid , email:email , displayName:displayName , photoURL:photoURL}))
-                        navigate("/browse")
                       }).catch((error) => {
                         // An error occurred
                       setErrorMessage(error.message)
                       });
+
+                      navigate("/browse")
                       
 
                     console.log(user)
