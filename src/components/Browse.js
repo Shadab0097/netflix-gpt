@@ -7,12 +7,15 @@ import Header from './Header'
 import MainContainor from './MainContainor'
 import SecondaryContainor from './SecondaryContainor'
 import GptSearch from './GptSearch'
+import BrowseTrailer from "./BrowseTrailer"
 
 
 
 
 const Browse = () => {
   const gptSearch = useSelector((store)=>store.gpt.showGptSearch)
+// const getCast = useSelector((store)=>store.movies.moviesCast)
+
   
   useNowPlayingMovies()
   usePopularMovies()
@@ -24,16 +27,18 @@ const Browse = () => {
   return (
     <div>
       <Header />
-      {gptSearch ? ( <GptSearch />) :
-       ( <>
-          <MainContainor />
+      {gptSearch ? (
+        <GptSearch />
+      )  : (
+        <>
+          <MainContainor  /> 
           <SecondaryContainor />
-        </>)
-
-      }
-
+       </>
+      )
+}
     </div>
-  )
+      
+  );
 }
 
 export default Browse

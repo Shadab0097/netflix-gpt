@@ -3,6 +3,8 @@ import Login from './Login'
 import Browse from './Browse'
 import { createBrowserRouter} from 'react-router-dom'
 import { RouterProvider } from 'react-router-dom'
+import BrowseTrailer from './BrowseTrailer'
+import MoviesCart from './MoviesCart'
 // import { onAuthStateChanged } from "firebase/auth";
 // import { auth } from '../utils/firebase'
 // import { useDispatch } from 'react-redux'
@@ -18,7 +20,16 @@ const Body = () => {
         },
         {
             path:"/browse",
-            element:<Browse/>
+            element:<Browse/>,
+            
+        },
+        {
+            path:"/browsetrailer",
+            element:<BrowseTrailer/>
+        },
+        {
+            path:"/moviecart",
+            element:<MoviesCart/>,
         }
     ]);
 

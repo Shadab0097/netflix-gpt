@@ -7,12 +7,15 @@ import useMovieTrailer from '../hooks/useMovieTrailer'
 const VideoBackground = ({movieId}) => {
   const trailerId = useSelector((store)=>store?.movies?.trailerVideo)
   useMovieTrailer(movieId)
-  if(!trailerId) return
+  if(!trailerId) return null
+  console.log(trailerId.key)
   
 
 
   return (
-    <div className=' w-full'>
+    <>
+    { }
+    <div className=' w-full '>
       <iframe 
       className="w-screen aspect-video " 
       src={"https://www.youtube.com/embed/"+trailerId.key+"?si=CNqqA7ZvUXgOeW40?&autoplay=1&mute=1&?modestbranding=1&autohide=1&showinfo=0&controls=0"}
@@ -20,6 +23,7 @@ const VideoBackground = ({movieId}) => {
       allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"  >  
       </iframe>
     </div>
+    </>
   )
 }
 
