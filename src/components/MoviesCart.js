@@ -1,8 +1,5 @@
 import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-// import MovieCard from './MovieCard'
-import MovieList from './MovieList'
-import { IMG_URL } from '../utils/constants'
 import MovieCard from './MovieCard'
 import TrailerHeader from "./TrailerHeader"
 import { clearMovieList } from '../utils/movieCartSlice'
@@ -34,8 +31,8 @@ const MoviesCart = () => {
                     </div>
                     {list.length === 0 && <h1 className='text-white text-3xl justify-center flex mt-10' >Please add Some Movies</h1>}
                 </div>
-                <div className='flex flex-wrap mt-10'>
-                    {list.map((list) => { return <MovieCard posterPath={list.posterPath} id={list.id} title={list.title} /> })}
+                <div className='flex flex-wrap mt-10 '>
+                    {list.map((list) => { return <MovieCard key={list.id} posterPath={list.posterPath} id={list.id} title={list.title} overview={list.overview} /> })}
 
                 </div>
             </div>

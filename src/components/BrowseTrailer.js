@@ -4,19 +4,13 @@ import VideoTitle from './VideoTitle';
 import VideoBackground from './VideoBackground';
 import MovieCast from './MovieCast';
 import TrailerHeader from './TrailerHeader';
-// import { useNavigate } from 'react-router-dom';
-// import Details from './Details';
 
 
 const BrowseTrailer = () => {
-  // const navigate = useNavigate()
-    const movies = useSelector((store)=>store.movies?.nowPlayingMovies)
-    const moviesID = useSelector((store)=>store.movies?.moviesId)
- 
-  
-    // if(!movies) return null;
-    // if(!moviesID) return null;
-  
+   const moviesID = useSelector((store)=>store.movies?.moviesId)
+
+   if(!moviesID) return
+
     const mainmovie = moviesID
     const{title, overview,} = mainmovie
   
@@ -26,7 +20,7 @@ const BrowseTrailer = () => {
     return (
       <div className=''>
         <TrailerHeader/>
-        <VideoTitle title={title}  overview={overview}/>
+        <VideoTitle title={title}  overview={overview} />
         <VideoBackground movieId={id}/>
         <MovieCast movieCastId={id}/>
       </div>

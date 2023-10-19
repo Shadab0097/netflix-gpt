@@ -20,7 +20,7 @@ const MainContainor = () => {
   console.log(id)
 
   return (
-    <div className=''>
+    <div className=' bg-black '>
       <VideoTitle title={title}  overview={overview} id={id}/>
       <VideoBackground movieId={id}/>
    

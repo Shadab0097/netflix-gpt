@@ -4,6 +4,9 @@ const moviesSlice = createSlice({
     name:"movies",
     initialState:{
         nowPlayingMovies:null,
+        popularMovies:null,
+        topRatedMovies:null,
+        upComingMovies:null,
         trailerVideo:null,
         moviesId: {id:980489,title:"Gran Turismo",overview:"The ultimate wish-fulfillment tale of a teenage Gran Turismo player whose gaming skills won him a series of Nissan competitions to become an actual professional racecar driver."},
         moviesCast:null,

@@ -6,7 +6,7 @@ import { addMoviesDtails } from "../utils/moviesSlice"
 
 const useGetMoviesDetails = ()=>{
   const moviesID = useSelector((store)=>store.movies?.moviesId)
-
+// const moviesDetails = useSelector(store=>store.movies.moviesDetails)
     // console.log(id)
     const dispatch = useDispatch()
 
