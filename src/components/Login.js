@@ -47,7 +47,7 @@ const Login = () => {
                       setErrorMessage(error.message)
                       });
 
-                      navigate("/browse")
+                      navigate("/whoiswatching")
                       
 
                 
@@ -67,7 +67,7 @@ const Login = () => {
                     const user = userCredential.user;
                    
                     
-                    navigate("/browse")
+                    navigate("/whoiswatching")
                    
                 })
                 .catch((error) => {

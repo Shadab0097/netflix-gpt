@@ -4,6 +4,7 @@ import { createBrowserRouter} from 'react-router-dom'
 import { RouterProvider } from 'react-router-dom'
 import BrowseTrailer from './BrowseTrailer'
 import MoviesCart from './MoviesCart'
+import WhoIsWatching from './WhoIsWatching'
 
 const Body = () => {
     // const dispatch = useDispatch()
@@ -25,6 +26,10 @@ const Body = () => {
         {
             path:"/moviecart",
             element:<MoviesCart/>,
+        },
+        {
+            path:"/whoiswatching",
+            element:<WhoIsWatching/>,
         }
     ]);
 
