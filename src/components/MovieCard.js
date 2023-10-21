@@ -26,7 +26,7 @@ const location = useLocation()
   return (
     <div className="flex-none  md:pr-3 p-0 md:ml-0 ml-2 group ">
       <img
-        className=" w-40 md:w-48 rounded-lg "
+        className="  w-40 md:w-48 rounded-lg "
         alt="movie"
         src={IMG_URL + posterPath}
        

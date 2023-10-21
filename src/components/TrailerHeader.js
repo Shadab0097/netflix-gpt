@@ -11,7 +11,7 @@ const TrailerHeader = () => {
 
   return (
     <div>
-      <div className='absolute w-[100vw]  z-20 px-2 md:px-8 py-2 bg-gradient-to-b from-black flex justify-between items-center'>
+      <div className='absolute w-[100vw]  z-20 px-2 md:px-8 py-2 bg-black from-black flex justify-between items-center'>
         <img
           className='w-32 h-16 md:w-40 md:h-24'
           src={LOGO}
