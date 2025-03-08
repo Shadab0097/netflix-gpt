@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "flixgpt-77869",
     "public": "build",
     "rewrites":[
         {

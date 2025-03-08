@@ -1,0 +1,131 @@
+[debug] [2025-03-08T07:07:03.618Z] ----------------------------------------------------------------------
+[debug] [2025-03-08T07:07:03.621Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dilsh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js projects:list
+[debug] [2025-03-08T07:07:03.621Z] CLI Version:   12.5.4
+[debug] [2025-03-08T07:07:03.621Z] Platform:      win32
+[debug] [2025-03-08T07:07:03.622Z] Node Version:  v22.11.0
+[debug] [2025-03-08T07:07:03.622Z] Time:          Sat Mar 08 2025 12:37:03 GMT+0530 (India Standard Time)
+[debug] [2025-03-08T07:07:03.622Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-08T07:07:03.720Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-08T07:07:03.721Z] > authorizing via signed-in user (shadabkhan2910@gmail.com)
+[debug] [2025-03-08T07:07:03.724Z] > refreshing access token with scopes: []
+[debug] [2025-03-08T07:07:03.726Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-08T07:07:03.726Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-08T07:07:04.015Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-03-08T07:07:04.015Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-08T07:07:04.015Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects pageSize=1000
+[debug] [2025-03-08T07:07:04.329Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects 401
+[debug] [2025-03-08T07:07:04.329Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects [omitted]
+[debug] [2025-03-08T07:07:04.331Z] HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2025-03-08T07:07:04.497Z] FirebaseError: HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+    at responseToError (C:\Users\dilsh\AppData\Roaming\npm\node_modules\firebase-tools\lib\responseToError.js:49:12)
+    at RetryOperation._fn (C:\Users\dilsh\AppData\Roaming\npm\node_modules\firebase-tools\lib\apiv2.js:285:77)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+[error] 
+[error] Error: Failed to list Firebase projects. See firebase-debug.log for more info.
+[debug] [2025-03-08T07:10:24.097Z] ----------------------------------------------------------------------
+[debug] [2025-03-08T07:10:24.099Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dilsh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-03-08T07:10:24.100Z] CLI Version:   13.33.0
+[debug] [2025-03-08T07:10:24.100Z] Platform:      win32
+[debug] [2025-03-08T07:10:24.100Z] Node Version:  v22.11.0
+[debug] [2025-03-08T07:10:24.100Z] Time:          Sat Mar 08 2025 12:40:24 GMT+0530 (India Standard Time)
+[debug] [2025-03-08T07:10:24.100Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-08T07:10:24.343Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-08T07:10:24.343Z] > authorizing via signed-in user (shadabkhan2910@gmail.com)
+[debug] [2025-03-08T07:10:24.343Z] [iam] checking project flixgpt-77869 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-03-08T07:10:24.344Z] Checked if tokens are valid: false, expires at: 1697868965260
+[debug] [2025-03-08T07:10:24.344Z] Checked if tokens are valid: false, expires at: 1697868965260
+[debug] [2025-03-08T07:10:24.345Z] > refreshing access token with scopes: []
+[debug] [2025-03-08T07:10:24.346Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-08T07:10:24.346Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-08T07:10:24.590Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-03-08T07:10:24.591Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-08T07:10:24.591Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/flixgpt-77869:testIamPermissions [none]
+[debug] [2025-03-08T07:10:24.591Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/flixgpt-77869:testIamPermissions x-goog-quota-user=projects/flixgpt-77869
+[debug] [2025-03-08T07:10:24.591Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/flixgpt-77869:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-03-08T07:10:26.075Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/flixgpt-77869:testIamPermissions 401
+[debug] [2025-03-08T07:10:26.075Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/flixgpt-77869:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2025-03-08T07:10:26.075Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-03-08T07:10:26.075Z] Checked if tokens are valid: false, expires at: 1697868965260
+[debug] [2025-03-08T07:10:26.075Z] Checked if tokens are valid: false, expires at: 1697868965260
+[debug] [2025-03-08T07:10:26.075Z] > refreshing access token with scopes: []
+[debug] [2025-03-08T07:10:26.076Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-08T07:10:26.076Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-08T07:10:26.164Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-03-08T07:10:26.164Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-08T07:10:26.165Z] [iam] error while checking permissions, command may fail: Request to https://cloudresourcemanager.googleapis.com/v1/projects/flixgpt-77869:testIamPermissions had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2025-03-08T07:10:26.166Z] Checked if tokens are valid: false, expires at: 1697868965260
+[debug] [2025-03-08T07:10:26.166Z] Checked if tokens are valid: false, expires at: 1697868965260
+[debug] [2025-03-08T07:10:26.166Z] > refreshing access token with scopes: []
+[debug] [2025-03-08T07:10:26.166Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-08T07:10:26.166Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-08T07:10:26.264Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-03-08T07:10:26.264Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-08T07:10:26.265Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/flixgpt-77869 [none]
+[debug] [2025-03-08T07:10:26.780Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/flixgpt-77869 401
+[debug] [2025-03-08T07:10:26.780Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/flixgpt-77869 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2025-03-08T07:10:26.780Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-03-08T07:10:26.780Z] Checked if tokens are valid: false, expires at: 1697868965260
+[debug] [2025-03-08T07:10:26.780Z] Checked if tokens are valid: false, expires at: 1697868965260
+[debug] [2025-03-08T07:10:26.780Z] > refreshing access token with scopes: []
+[debug] [2025-03-08T07:10:26.781Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-08T07:10:26.781Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-08T07:10:26.871Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-03-08T07:10:26.871Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-08T07:10:26.871Z] Request to https://firebase.googleapis.com/v1beta1/projects/flixgpt-77869 had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
+[debug] [2025-03-08T07:13:27.462Z] ----------------------------------------------------------------------
+[debug] [2025-03-08T07:13:27.467Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\dilsh\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy
+[debug] [2025-03-08T07:13:27.468Z] CLI Version:   13.33.0
+[debug] [2025-03-08T07:13:27.468Z] Platform:      win32
+[debug] [2025-03-08T07:13:27.468Z] Node Version:  v22.11.0
+[debug] [2025-03-08T07:13:27.469Z] Time:          Sat Mar 08 2025 12:43:27 GMT+0530 (India Standard Time)
+[debug] [2025-03-08T07:13:27.469Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-03-08T07:13:27.869Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-03-08T07:13:27.869Z] > authorizing via signed-in user (shadabkhan2910@gmail.com)
+[debug] [2025-03-08T07:13:27.869Z] [iam] checking project flixgpt-77869 for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2025-03-08T07:13:27.870Z] Checked if tokens are valid: false, expires at: 1697868965260
+[debug] [2025-03-08T07:13:27.871Z] Checked if tokens are valid: false, expires at: 1697868965260
+[debug] [2025-03-08T07:13:27.871Z] > refreshing access token with scopes: []
+[debug] [2025-03-08T07:13:27.872Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-08T07:13:27.872Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-08T07:13:28.104Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-03-08T07:13:28.104Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-08T07:13:28.104Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/flixgpt-77869:testIamPermissions [none]
+[debug] [2025-03-08T07:13:28.104Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/flixgpt-77869:testIamPermissions x-goog-quota-user=projects/flixgpt-77869
+[debug] [2025-03-08T07:13:28.104Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/flixgpt-77869:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2025-03-08T07:13:29.570Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/flixgpt-77869:testIamPermissions 401
+[debug] [2025-03-08T07:13:29.571Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/flixgpt-77869:testIamPermissions {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED","details":[{"@type":"type.googleapis.com/google.rpc.ErrorInfo","reason":"ACCESS_TOKEN_TYPE_UNSUPPORTED","metadata":{"method":"google.cloudresourcemanager.v1.Projects.TestIamPermissions","service":"cloudresourcemanager.googleapis.com"}}]}}
+[debug] [2025-03-08T07:13:29.571Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-03-08T07:13:29.571Z] Checked if tokens are valid: false, expires at: 1697868965260
+[debug] [2025-03-08T07:13:29.571Z] Checked if tokens are valid: false, expires at: 1697868965260
+[debug] [2025-03-08T07:13:29.571Z] > refreshing access token with scopes: []
+[debug] [2025-03-08T07:13:29.571Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-08T07:13:29.571Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-08T07:13:29.668Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-03-08T07:13:29.668Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-08T07:13:29.669Z] [iam] error while checking permissions, command may fail: Request to https://cloudresourcemanager.googleapis.com/v1/projects/flixgpt-77869:testIamPermissions had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[debug] [2025-03-08T07:13:29.669Z] Checked if tokens are valid: false, expires at: 1697868965260
+[debug] [2025-03-08T07:13:29.669Z] Checked if tokens are valid: false, expires at: 1697868965260
+[debug] [2025-03-08T07:13:29.669Z] > refreshing access token with scopes: []
+[debug] [2025-03-08T07:13:29.670Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-08T07:13:29.670Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-08T07:13:29.765Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-03-08T07:13:29.765Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-08T07:13:29.765Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/flixgpt-77869 [none]
+[debug] [2025-03-08T07:13:29.977Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/flixgpt-77869 401
+[debug] [2025-03-08T07:13:29.977Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/flixgpt-77869 {"error":{"code":401,"message":"Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.","status":"UNAUTHENTICATED"}}
+[debug] [2025-03-08T07:13:29.977Z] Got a 401 Unauthenticated error for a call that required authentication. Refreshing tokens.
+[debug] [2025-03-08T07:13:29.977Z] Checked if tokens are valid: false, expires at: 1697868965260
+[debug] [2025-03-08T07:13:29.977Z] Checked if tokens are valid: false, expires at: 1697868965260
+[debug] [2025-03-08T07:13:29.977Z] > refreshing access token with scopes: []
+[debug] [2025-03-08T07:13:29.978Z] >>> [apiv2][query] POST https://www.googleapis.com/oauth2/v3/token [none]
+[debug] [2025-03-08T07:13:29.978Z] >>> [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-08T07:13:30.069Z] <<< [apiv2][status] POST https://www.googleapis.com/oauth2/v3/token 400
+[debug] [2025-03-08T07:13:30.069Z] <<< [apiv2][body] POST https://www.googleapis.com/oauth2/v3/token [omitted]
+[debug] [2025-03-08T07:13:30.069Z] Request to https://firebase.googleapis.com/v1beta1/projects/flixgpt-77869 had HTTP Error: 401, Request had invalid authentication credentials. Expected OAuth 2 access token, login cookie or other valid authentication credential. See https://developers.google.com/identity/sign-in/web/devconsole-project.
+[error] 
+[error] Error: Assertion failed: resolving hosting target of a site with no site name or target name. This should have caused an error earlier
